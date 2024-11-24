@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -40,10 +41,9 @@
               </div>
             </div>
 
-            <div class="search-container" style="position: relative; top: 10px; right: 10px;">
+            <div class="search-container" style="position: relative; bottom:0; right: 10px; display: inline-block;">
                 <form action="/action_page.php">
                   <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
 
@@ -57,9 +57,10 @@
 
     <main>
 
-        <div class="container">
+        <div class="container col-lg-8">
 
-            <h1>Catalogo Libri</h1>
+            <h1 style="position: relative; top: 20px;">Catalogo Libri</h1>
+            <button type="button" class="btn btn-primary" style="float: right; position: relative; bottom: 20px;">Aggiungi libro</button>
 
             <table class="table table-striped">
                 <thead>
@@ -70,7 +71,190 @@
                         <th scope="col">Azioni</th>
                     </tr>
                 </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">I pilastri della terra</th>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-success">Disponibile</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">I promessi sposi</th>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-success">Disponibile</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Il signore degli anelli</th>
+                        <td>18/10/2023</td>
+                        <td><button type="button" class="btn btn-warning" style="color: white;">In prestito</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Harry Potter e la pietra filosofale</th>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-success">Disponbile</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Il codice Da Vinci</th>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-danger">Non disponbile</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Shining</th>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-success">Disponbile</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">La divina commedia</th>
+                        <td>21/09/2023</td>
+                        <td><button type="button" class="btn btn-warning" style="color: white;">In prestito</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Il trono di spade</th>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-success">Disponbile</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Il mondo di Sofia</th>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-danger">Non disponbile</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Le cronache di Narnia: il leone, la strega e l'armadio</th>
+                        <td>25/07/2023</td>
+                        <td><button type="button" class="btn btn-warning" style="color: white;">In prestito</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Il piccolo principe</th>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-success">Disponbile</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="col">La storia infinita</th>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-success">Disponbile</button></td>
+                        <td>
+                            <i class="fa-solid fa-pen"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+
+                </tbody>
+                
             </table>
+
+        </div>
+
+        <div class="container col-lg-4">
+
+            <nav>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                      <h3>Todo</h3>
+                    </div>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                          <label class="form-check-label" for="firstCheckbox">Chiamare Segreteria</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                          <label class="form-check-label" for="secondCheckbox">Mandare avvisi prestiti scaduti </label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                          <label class="form-check-label" for="thirdCheckbox">Ordinare nuovi libri</label>
+                        </li>
+                 
+                    </ul>
+                </div>
+            </nav>
+       
+
+                
+
+        </div>
+
+        <div class="container col-lg-4">
+            
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                  <h3>F.A.Q</h3>
+                </div>
+
+                <select class="form-select" aria-label="Disabled select example" disabled>
+                    <option selected>Come aggiungere un nuovo libro</option>
+                    <option value="1">Registrarsi o effettuare il login se si ha già un account. Selezionare “Attiva libro” nell'Homepage. Inserire il codice di attivazione trovato nel libro. Seguire le istruzioni per scaricare o accedere al libro digitale.</option>
+
+                </select>
+
+                <select class="form-select" aria-label="Disabled select example" disabled>
+                    <option selected>Come posso aggiungere all'anagrafica utenti?</option>
+                    <option value="2">Accedendo al sito www.anagrafenazionale.gov.it i cittadini in possesso di un'identità digitale possono effettuare in autonomia la visura dei propri dati anagrafici e stampare un modello di autocertificazione da soli e in un click.</option>
+                </select>
+
+                <select class="form-select" aria-label="Disabled select example" disabled>
+                    <option selected>Posso usare questa dashboard da mobile?</option>
+                    <option value="3">È possibile accedere nuovamente alla dashboard in qualsiasi momento facendo clic sul pulsante '+' per aprire una nuova scheda ETS</option>
+                 </select>
+
+            </div>
+    
         </div>
     </main>
     
